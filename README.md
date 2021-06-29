@@ -63,9 +63,8 @@ the information in this 8-bit image format. We use a logistic function that maps
 ## Sub-directories and Files
 There are four sub-directories described as follows:
 
-### images
-Some sample RGB images in logistic position format with their emotion classes: angry, happy, insecure, sad.
-(https://github.com/cbeyan/AffectiveBodyMovements/blob/main/SAMPLEIMAGES)
+### Sample Images
+Some sample [RGB images] in logistic position format with their emotion classes: angry, happy, insecure, sad (https://github.com/cbeyan/AffectiveBodyMovements/blob/main/SAMPLEIMAGES)
 
 ### FCN-Training
 
@@ -83,9 +82,9 @@ Some sample RGB images in logistic position format with their emotion classes: a
 
 
 ## How it works
-1- Use the Matlab code given to obtain RGB images in logistic position format.
+1- Use the Matlab code to obtain RGB images in logistic position format.
 
-2- Use the Python code supplied to train and test the method.
+2- Use the Python code to train and test the method.
 
 ## Reference
 
