@@ -4,7 +4,7 @@
 [Video Presentation](??) <br />
 
 ## Overview
-![BlockDiagram](https://github.com/cbeyan/AffectiveBodyMovements/FigureMain.png)
+![BlockDiagram](https://github.com/cbeyan/AffectiveBodyMovements/blob/main/FigureMain.png)
 
 Proposed method employs a two-branch architecture. It consists of two CNNs, each of them is composed of three
 convolutional layers followed by fully connected layers. The shape of the convolutional filters are extended along the time
@@ -58,14 +58,14 @@ the x-axis. For example, a row of the R layer in the resulting image
 represents the temporal evolution of the X coordinate of the marker
 associated with that row. Then, logistic position is used to fit
 the information in this 8-bit image format. We use a logistic function that maps the positions into the -127 to
-+127 interval, see paper for the Eqution used).
++127 interval (see paper for the equation used).
 
 ## Sub-directories and Files
 There are four sub-directories described as follows:
 
 ### images
-Contains the block diagram of proposed method, and some sample RGB images in logistic position format, named with the emotion classes: angry, happy, insecure, sad.
- 
+Some sample RGB images in logistic position format with their emotion classes: angry, happy, insecure, sad.
+(https://github.com/cbeyan/AffectiveBodyMovements/blob/main/SAMPLEIMAGES)
 
 ### FCN-Training
 
