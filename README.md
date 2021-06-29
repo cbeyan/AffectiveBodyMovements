@@ -4,7 +4,7 @@
 [Video Presentation](??) <br />
 
 ## Overview
-![BlockDiagram](https://github.com/cbeyan/AffectiveBodyMovements/main/figure.jpg)
+![BlockDiagram](https://github.com/cbeyan/AffectiveBodyMovements/main/figure.png)
 
 Proposed method employs a two-branch architecture. It consists of two CNNs, each of them is composed of three
 convolutional layers followed by fully connected layers. The shape of the convolutional filters are extended along the time
