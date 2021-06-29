@@ -4,7 +4,7 @@
 [Video Presentation](??) <br />
 
 ## Overview
-![BlockDiagram](https://github.com/cbeyan/AffectiveBodyMovements/main/figure.png)
+![BlockDiagram](https://github.com/cbeyan/AffectiveBodyMovements/FigureMain.png)
 
 Proposed method employs a two-branch architecture. It consists of two CNNs, each of them is composed of three
 convolutional layers followed by fully connected layers. The shape of the convolutional filters are extended along the time
@@ -25,21 +25,46 @@ as the output layer such that each output value corresponds to one emotion class
 A softmax function in the output layer determines the final emotion class for the given input image.
 
 The input of our model at a time is a part of a data segment in
-the form of two RGB images in logistic position image format (see
-the following figure). The two-branches of the proposed architecture take images both having the size *M=NxK* (while K is defined by the
+the form of two RGB images in logistic position image format. 
+The two-branches of the proposed architecture take images both having the size *M=NxK* (while K is defined by the
 number of markers). Strating from an image *I* having the size
 *MxK*) corresponding to a certain data chunk duration and *I_2* that
 is a part of *I* corresponding to the last portion of *I* (e.g., the last
 quarter), thus its size is *M=NxK*, where 1 < N <M, first, image resizing with bi-cubic interpolation is
 applied to *I*, resulting in *I_00*, which is *M=N xK*. Then, *I_00* and *I* are given to the network as the inputs, simultaneously.
 
+## Logistic Position Image Construction
+Data consisting of the *3D-positions* of e.g., 30 markers at 100 fps was
+converted into RGB images, which is a common input format for
+CNNs. This includes dividing the MoCap segments as identified
+by the experts, which have a variable duration, into chunks of fixed
+duration. Then, a chunk of data is converted into an RGB image.
+Various values were tested for the duration of a single chunk while
+overlapping in time was also applied.
 
+The procedure for constructing RGB images includes bodycentred
+relative normalization. The value of marker e.g., CLAV at the first frame of each chunk is taken
+as a point of reference. CLAV is situated on the lower part of the chest on the xiphoid process. So in the first frame, the position of
+CLAV is zero. The positions of the other markers are taken with respect to this new origin. By using
+body-centred relative positioning, the range of the marker values
+is reduced, thus, it is no longer required to map all the positions of
+the workspace. 
+
+An 8-bit RGB image format is used to represent the data such that the X,
+Y and Z coordinates of the markers are associated with the R, G
+and B layers, respectively. Markers are represented on the y-axis,
+while the consecutive frames of the sequence are represented on
+the x-axis. For example, a row of the R layer in the resulting image
+represents the temporal evolution of the X coordinate of the marker
+associated with that row. Then, logistic position is used to fit
+the information in this 8-bit image format. We use a logistic function that maps the positions into the -127 to
++127 interval, see paper for the Eqution used).
 
 ## Sub-directories and Files
 There are four sub-directories described as follows:
 
 ### images
-Contains the block diagram of proposed method, and some sample RGB images in logistic position format.
+Contains the block diagram of proposed method, and some sample RGB images in logistic position format, named with the emotion classes: angry, happy, insecure, sad.
  
 
 ### FCN-Training
