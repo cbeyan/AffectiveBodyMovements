@@ -64,7 +64,7 @@ the information in this 8-bit image format. We use a logistic function that maps
 There are four sub-directories described as follows:
 
 ### Sample Images
-Some sample [RGB images] in logistic position format with their emotion classes: angry, happy, insecure, sad (https://github.com/cbeyan/AffectiveBodyMovements/blob/main/SAMPLEIMAGES)
+![Some sample RGB images in logistic position format with their emotion classes: angry, happy, insecure, sad] (https://github.com/cbeyan/AffectiveBodyMovements/blob/main/SAMPLEIMAGES)
 
 ### FCN-Training
 
