@@ -27,7 +27,7 @@ A softmax function in the output layer determines the final emotion class for th
 The input of our model at a time is a part of a data segment in
 the form of two RGB images in logistic position image format. 
 The two-branches of the proposed architecture take images both having the size *M=NxK* (while K is defined by the
-number of markers). Strating from an image *I* having the size
+number of markers). Starting from an image *I* having the size
 *MxK*) corresponding to a certain data chunk duration and *I_2* that
 is a part of *I* corresponding to the last portion of *I* (e.g., the last
 quarter), thus its size is *M=NxK*, where 1 < N <M, first, image resizing with bi-cubic interpolation is
@@ -63,28 +63,27 @@ the information in this 8-bit image format. We use a logistic function that maps
 ## Sub-directories and Files
 There are four sub-directories described as follows:
 
-### Sample Images
-![Some sample RGB images in logistic position format with their emotion classes: angry, happy, insecure, sad] (https://github.com/cbeyan/AffectiveBodyMovements/blob/main/SAMPLEIMAGES)
+### Code
 
-### FCN-Training
+``obtainRGBImages_twoBranch.m``: ????
 
-``FCN_Train_Main``: To train Fully Convolutional ResNet-50 model on a given dataset 
+``applyImageGeneration.mm``: ????
 
-``resnet_fcn.py``: ResBet-based Fully Convolutional ResNet-50 definition 
+``augmentData.m``: ????
 
-``datageneratorRealVAD.py``: Image batch generator including segmentation mask and bounding boxes
-
-``datageneratorTest.py``: Sequential image batch generator with only bounding box annotation
 
 ## Dependencies
+
 * Python 3.5
 * Tensorflow 1.12
+* Matlab 2015a or later
 
 
 ## How it works
-1- Use the Matlab code to obtain RGB images in logistic position format.
 
-2- Use the Python code to train and test the method.
+1- Use the Matlab code (obtainRGBImages_twoBranch.m) to obtain RGB images in logistic position format.
+
+2- Use the Python code (xxxx.py) to train and test the method.
 
 ## Reference
 
