@@ -1,7 +1,7 @@
 # Code for the paper "Modeling Multiple Temporal Scales of Full-body Movements for Emotion Classification"
 
-[Full Paper and Supplementary Material](https://ieeexplore.ieee.org/document/??) <br /> CMING SOON!!!
-[Video Presentation](??) <br /> COMING SOON!!!
+[Full Paper and Supplementary Material](https://ieeexplore.ieee.org/document/??) <br />
+[Video Presentation](??) <br />
 
 ## Overview
 ![BlockDiagram](https://github.com/cbeyan/AffectiveBodyMovements/blob/main/FigureMain.png)
@@ -70,7 +70,7 @@ the information in this 8-bit image format. We use a logistic function that maps
 
 ``resizeFirstBranch.m``: To resize the inputs of the first branch to the size of the images input to the second branch.
 
-``traintest_DEMO.py``: Train and test the proposed acrhitecture in a single file when the inputs are the images saved into the ``Images`` folder. 
+``traintest_DEMO.py``: Train and test the proposed architecture in a single file when the inputs are the images saved into the ``Images`` folder. 
 
 
 ## Dependencies
