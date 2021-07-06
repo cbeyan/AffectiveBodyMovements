@@ -89,7 +89,7 @@ the information in this 8-bit image format. We use a logistic function that maps
 ## Reference
 
 C. Beyan, S. Karumuri, G. Volpe, A. Camurri and R. Niewiadomski, "Modeling Multiple Temporal Scales of Full-body Movements for Emotion Classification", 
-in IEEE Transactions on Affective Computing, doi: 10.1109/TAFFC.2021.??.
+in IEEE Transactions on Affective Computing, DOI: 10.1109/TAFFC.2021.3095425.
 ```
 @ARTICLE{affectiveBodyMovements,
   author={Cigdem Beyan and Sukumar Karumuri and Gualtiero Volpe and Antonio Camurri and Radoslaw Niewiadomski},
@@ -99,4 +99,4 @@ in IEEE Transactions on Affective Computing, doi: 10.1109/TAFFC.2021.??.
   volume={},
   number={},
   pages={1-1},
-  doi={10.1109/TAFFC.2021.??}}
+  doi={10.1109/TAFFC.2021.3095425}}
