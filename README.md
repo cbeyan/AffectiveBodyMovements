@@ -1,7 +1,7 @@
 # Code for the paper "Modeling Multiple Temporal Scales of Full-body Movements for Emotion Classification"
 
-[Full Paper and Supplementary Material](https://ieeexplore.ieee.org/document/??) <br />
-[Video Presentation](??) <br />
+[Full Paper and Supplementary Material](https://ieeexplore.ieee.org/document/9477164) <br />
+[Video Presentation](https://www.youtube.com/watch?v=xdoXDnOf0oI) <br />
 
 ## Overview
 ![BlockDiagram](https://github.com/cbeyan/AffectiveBodyMovements/blob/main/FigureMain.png)
